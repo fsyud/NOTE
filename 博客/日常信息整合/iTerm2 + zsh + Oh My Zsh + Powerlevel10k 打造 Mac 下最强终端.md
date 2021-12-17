@@ -9,6 +9,8 @@ Classic Prompt Style：
 Rainbow Prompt Style：
 
 
+
+
 ## 安装 iTerm2
 对于 Linux 和 WSL 用户，可以略过本步骤。Linux 使用默认的终端，WSL 使用 Windows Terminal 实现相同的效果。
 
