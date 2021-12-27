@@ -35,6 +35,9 @@ console.log(person2.name) // Kevin
 
 让我们用一张图表示构造函数和实例原型之间的关系：
 
+![image](https://user-images.githubusercontent.com/26371465/147430918-09a4ad37-3f98-40fe-91bb-cad1964ba784.png)
+
+
 构造函数和实例原型的关系图
 
 在这张图中我们用 Object.prototype 表示实例原型。
@@ -54,6 +57,9 @@ console.log(person.__proto__ === Person.prototype); // true
 ```
 于是我们更新下关系图：
 
+![image](https://user-images.githubusercontent.com/26371465/147430945-d8cc8e9e-49a9-407e-be0f-9c07fd436090.png)
+
+
 实例与实例原型的关系图
 
 既然实例对象和构造函数都可以指向原型，那么原型是否有属性指向构造函数或者实例呢？
@@ -69,6 +75,9 @@ function Person() {
 console.log(Person === Person.prototype.constructor); // true
 ```
 所以再更新下关系图：
+
+![image](https://user-images.githubusercontent.com/26371465/147430960-bbd1ed8c-e00b-4b73-a968-8476f0294ba9.png)
+
 
 实例原型与构造函数的关系图
 
@@ -121,6 +130,9 @@ console.log(obj.name) // Kevin
 ```
 其实原型对象就是通过 Object 构造函数生成的，结合之前所讲，实例的 __proto__ 指向构造函数的 prototype ，所以我们再更新下关系图：
 
+![image](https://user-images.githubusercontent.com/26371465/147430983-5202213f-1f39-462e-9dea-c0e96d3185e0.png)
+
+
 原型的原型关系图
 
 原型链
@@ -141,6 +153,9 @@ null 表示“没有对象”，即该处不应该有值。
 所以查找属性的时候查到 Object.prototype 就可以停止查找了。
 
 最后一张关系图也可以更新为：
+
+![image](https://user-images.githubusercontent.com/26371465/147430993-9eb599ec-79b9-4029-ad2a-f4ef7d8f4154.png)
+
 
 原型链示意图
 
