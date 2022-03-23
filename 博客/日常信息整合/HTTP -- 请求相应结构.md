@@ -77,3 +77,13 @@
 　　1.可能是纯数据
 
 　　2.可能是 HTML 页面。
+  
+  Cache-Control：
+  Cache-Control是最重要的规则。常见的取值有private、public、no-cache、max-age，no-store，默认为private。
+
+（1） max-age：用来设置资源（representations）可以被缓存多长时间，单位为秒；
+（2） s-maxage：和max-age是一样的，不过它只针对代理服务器缓存而言；
+（3）public：指示响应可被任何缓存区缓存；
+（4）private：只能针对个人用户，而不能被代理服务器缓存；
+（5）no-cache：在发布缓存副本之前，强制要求缓存把请求提交给原始服务器进行验证(协商缓存验证)。
+（6）no-store：禁止一切缓存（这个才是响应不被缓存的意思）,缓存不应存储有关客户端请求或服务器响应的任何内容，即不使用任何缓存。
